@@ -1,3 +1,5 @@
+import javax.swing.JOptionPane;
+
 public class ex1b {
     public static void main(String[] args) {
         //Variaveis
