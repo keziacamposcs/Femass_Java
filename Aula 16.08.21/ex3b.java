@@ -6,9 +6,9 @@ public class ex3b {
         //Variaveis
         String aux ="";
         int[] aluno;
-        int media;
-        int mediaturma;
-        int resultado;
+        double media;
+        double mediaturma;
+        double resultado;
 
 
         //JOptionPane
@@ -17,9 +17,9 @@ public class ex3b {
 
 
         for (int i = 0; i < quant; i++) {
-            n1[i] = Integer.parseInt(JOptionPane.showInputDialog("Digite N1:"));
-            n2[i] = Integer.parseInt(JOptionPane.showInputDialog("Digite N2:"));
-            n3[i] = Integer.parseInt(JOptionPane.showInputDialog("Digite N3:"));
+            n1[i] = Float.parseFloat(JOptionPane.showInputDialog("Digite N1:"));
+            n2[i] = Float.parseFloat(JOptionPane.showInputDialog("Digite N2:"));
+            n3[i] = Float.parseFloat(JOptionPane.showInputDialog("Digite N3:"));
 
             media = (n1+n2+n3)/3;
 
