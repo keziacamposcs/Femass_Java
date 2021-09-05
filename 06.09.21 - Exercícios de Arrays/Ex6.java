@@ -9,7 +9,7 @@ public class Ex6 {
         //Matriz
         for(int linha=0; linha<50; linha++){
             for(int coluna=0; coluna<20; coluna++){
-                num[linha][coluna] = ((int)(Math.random()*100))+51;
+                num[linha][coluna] = ((int)(Math.random()*1050))+51;
             }
         }
         //Fim Matriz
