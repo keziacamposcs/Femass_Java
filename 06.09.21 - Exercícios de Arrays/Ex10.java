@@ -1,37 +1,58 @@
 import java.util.ArrayList;
-import java.util.Scanner;
+import javax.swing.*;
 
 public class Ex10 {
     public static void main(String[] args)
     {
-        ArrayList<ArrayList<Integer>> matriz_todo = new ArrayList<>();
-        ArrayList<Integer> matriz = new ArrayList<>();
-
-        matriz_todo.add(matriz);
+        ArrayList<ArrayList<Integer>> matriz = new ArrayList<>();
+        ArrayList<Integer> diagonal = new ArrayList<>();
 
         //Matriz
-        for(int linha=0; linha<50; linha++)
+        for(int linha=0; linha<4; linha++)
         {
-            for(int coluna=0; coluna<20; coluna++)
-            {
-                matriz.add(((int)(Math.random()*100))+51);
-            }
+               String values = JOptionPane.showInputDialog("Digite 4 valores da linha " + (linha+1) + " (separados por ;):");
+               values = values.replaceAll("","");
+
+               String[] splitValues;
+               ArrayList<Integer>coluna = new ArrayList<>();
+               valuesMatrix.add(coluna);
+
+               for(int coluna=0; coluna<4; coluna++)
+               {
+                   coluna.add(Integer.parseInt(splitValues[coluna]));
+
+                   if(linha==coluna)
+                   {
+                       diagonalValues.add(Integer.parseInt(splitValues[coluna]));
+                   }
+               }
+
+               for(ArrayList<Integer> coluna: valuesMatrix)
+               {
+                   for(int value : coluna)
+                   {
+                       System.out.print(value + " ");
+                   }
+                   System.out.println();
+               }
+               System.out.println();
         }
-        //Fim Matriz
 
-        //Recebe numero
-        Scanner recebe = new Scanner(System.in);
-        System.out.println("Informe o número de interesse: ");
-        int n = recebe.nextInt();
-        
-
-        for (ArrayList<Integer> matriz : matriz_todo)
+        for(int linha=0; linha<4; linha++)
         {
-            System.out.print("\n");
-            for (int item: matriz)
+            for(int coluna=0; coluna<4; coluna++)
             {
-                System.out.print(item + "\t");
+                if(linha==coluna)
+                {
+                    System.out.print(diagonalValues.get(coluna) + "");
+                }
+                else
+                {
+                    System.out.print("");;
+                }
             }
+            System.out.println();
         }
     }
 }
+

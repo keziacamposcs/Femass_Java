@@ -7,8 +7,10 @@ public class Ex6 {
         
 
         //Matriz
-        for(int linha=0; linha<50; linha++){
-            for(int coluna=0; coluna<20; coluna++){
+        for(int linha=0; linha<50; linha++)
+        {
+            for(int coluna=0; coluna<20; coluna++)
+            {
                 num[linha][coluna] = ((int)(Math.random()*1050))+51;
             }
         }
@@ -20,7 +22,8 @@ public class Ex6 {
         int n = recebe.nextInt();
         
 
-        for(int[] linha: num){
+        for(int[] linha: num)
+        {
             System.out.println();
             for(int item: linha)
                 System.out.print(item + "\t");
@@ -28,16 +31,21 @@ public class Ex6 {
 
         //Procura numero
         boolean encontrado = false;
-        for(int linha=0; linha<50; linha++){
-            for(int coluna=0; coluna<20; coluna++){
-                if(n == num[linha][coluna]){
+        for(int linha=0; linha<50; linha++)
+        {
+            for(int coluna=0; coluna<20; coluna++)
+            {
+                if(n == num[linha][coluna])
+                {
                     encontrado = true;
                     System.out.println("\nO número " + n + 
                             " foi encontrado na linha " + linha + " e coluna " + coluna);
                 }
             }
         }
-        if (encontrado == false){
+
+        if (encontrado == false)
+        {
             System.out.println("\nO número " + n + " não existe na matriz!");
         } 
     }
