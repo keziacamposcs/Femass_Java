@@ -15,27 +15,26 @@ Depois disso, elabore métodos para as seguintes ações:
 
 */
 
-public class TV
-{
+public class tv {
+    
+    //Atributos
     boolean ligado;
     int canal;
-    int volume; 
+    int volume;
     
-    //Metodo construtivo 1:
-    public TV(boolean ligado, int c, int v)
-    {
-        this.canal = c;
-        this.volume = v;
-        this.ligado = ligado
+    //Metodo construtivo tipo Default
+    public tv(){
+        ligado = false;
+        canal = 0;
+        volume = 0;
     }
     
-    //Metodo construtivo 2:
-    public TV()
-    {
+    //Metodo construtivo tipo Construtor 1
+    public tv(boolean ligado, int canal, int volume){
+        this.ligado = true;
+        this.canal = 10;
+        this.volume = 25;
     }
-    
-    
-    
     
     //Aumentar e reduzir o volume de um em um (de 0 a 100)
     public void aumentaVolume()
@@ -51,8 +50,6 @@ public class TV
                 volume =- 1;
     }
     
-    
-    
     //Trocar o canal de 0 a 999
     public void subirCanal()
     {
@@ -66,8 +63,6 @@ public class TV
             if(canal > 1)
                 canal =- 1;   
     }
-    
-    
     
     //Mostrar todos os atributos de uma instância
     public void ligar()
@@ -93,5 +88,4 @@ public class TV
         else
             System.out.println("A TV esta desligada.");
     }
-    
 }
