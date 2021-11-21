@@ -2,7 +2,7 @@ package com.mycompany.projeto;
 
 public class Conta_Super_Especial extends Conta
 {
-    double limite_se;
+    private double limite_se;
     
     public Conta_Super_Especial(double limse)
     {
@@ -10,7 +10,7 @@ public class Conta_Super_Especial extends Conta
     }
     
     @Override
-    public void sacar(double v)
+    public void sacar(double valor)
     {
     }
     

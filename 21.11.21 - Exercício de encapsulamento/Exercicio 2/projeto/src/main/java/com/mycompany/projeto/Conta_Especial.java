@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Conta_Especial extends Conta
 {
-    double limite_e;
+    private double limite_e;
     
     public Conta_Especial(double lime)
     {
@@ -12,13 +12,13 @@ public class Conta_Especial extends Conta
     }
     
     @Override
-    public void sacar(double v)
+    public void sacar(double valor)
     {
     }
     
-    public void set_limite_E(double v)
+    public void set_limite_E(double valor)
     {
-        this.saldo = v; 
+        this.saldo = valor; 
     }
     public double get_limite_E()
     {

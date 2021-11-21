@@ -1,40 +1,57 @@
 package com.mycompany.projeto;
-
 import java.util.ArrayList;
 
 public class Conta 
 {
     protected int nr_conta;
     private double saldo;
-    private ArrayList<String> transacao = new ArrayList<String> ();
+    private ArrayList<String> transacao;
     
-    public Conta(String n, double v, ArrayList tr)
+    public Conta(String nr_conta, ArrayList transacao)
     {
-        this.nr_conta = n;
-        this.saldo = v;
-        this.transacao = tr;
+        this.nr_conta = nr_conta;
+        this.saldo = saldo;
+        this.transacao = transacao;
     } 
     
-    void deposita(double v)
+    //Depositar
+    public void depositar(double valor)
     {
-        this.saldo = saldo + v;
-    }
-    void sacar (double v)
-    {
-        this.saldo = saldo - v;
+        System.out.print("Deposito....");
+        System.out.print("Saldo Anterior:" +this.saldo);
+        
+        this.saldo += valor;
+        
+        System.out.print("Saldo atual:"+this.saldo);
     }
     
-    public void set_nr_conta(int n)
+    //Sacar
+    public void sacar (double valor)
     {
-        this.nr_conta = n;
+        System.out.print("Saque....");
+        System.out.print("Saldo Anterior:" +this.saldo);
+        
+        this.saldo -= valor;
+        
+        System.out.print("Saldo atual:"+this.saldo);
+    }
+   
+    public void set_nr_conta(int nr_conta)
+    {
+        this.nr_conta = nr_conta;
     }
     private int get_nr_conta()
     {
         return nr_conta;
     }
     
-    private double movimento_total()
+    //Transacao
+    private void movimento_total(ArrayList<String> transacao)
     {
-        return transacao;
+        transacao.add(nr_conta);
+        transacao.add(saldo);    
+        System.out.println("Numero da conta:" + transacao.get(nr_conta));
+        System.out.println("Saldo da conta:" + transacao.get((int) saldo));
+
     }
 }
