@@ -1,0 +1,27 @@
+Enunciado da Prova 1
+Dado o mini mundo abaixo, façam: 
+
+Diagrama de classes de negócio
+Diagrama de caso de uso
+Construção de telas usando JavaFX
+Testes Unitários das classes de negócio (somente nas regras de negócio)
+Persistência usando Interface com Generic para montar a estrutura e Dao usando XML
+
+
+Observação: Só desenvolvam depois de validarem os diagramas com o professor. Quanto antes validarem, melhor.
+
+
+
+Data Limite de entrega: 12/04/2022
+
+Mini Mundo
+
+SISTEMA DE BIBLIOTECA 
+
+A Biblioteca da Faculdade Prog3 é responsável pelo acervo de livros e gestão de empréstimos dos mesmos.  
+Um livro é cadastrado pela bibliotecária com seus autores (nome, sobrenome), gêneros (nome), ano e edição.
+Um livro pode ter várias cópias e, pelo menos uma cópia deve ser marcada como não podendo emprestar, para
+que sempre que alguém quiser ler na biblioteca poderá ter acesso. Cada cópia tem um número único identificador  
+O sistema de empréstimo é destinado somente para alunos e professores. Os alunos podem devolver em 5 dias e os
+professores podem devolver em até 30 dias. Um empréstimo é de um livro por um usuário. E um usuário pode ter no
+máximo 5 empréstimos ativos por vez. 
