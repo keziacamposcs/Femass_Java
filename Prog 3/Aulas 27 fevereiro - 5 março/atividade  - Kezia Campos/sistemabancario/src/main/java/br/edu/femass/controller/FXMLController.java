@@ -1,4 +1,4 @@
-package br.edu.femass;
+package br.edu.femass.controller;
 
 import java.net.URL;
 import java.util.ResourceBundle;
