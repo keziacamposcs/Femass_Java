@@ -44,5 +44,12 @@ Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de
 
 8. Confirma as propriedades do projeto;
 
----
+![Coffee](https://media0.giphy.com/media/4qdB4dY4xsKWc/giphy.gif?cid=ecf05e471t1mgste4tinqqsyy12tlv0rxw063p6ih7v31tjv&rid=giphy.gif&ct=g)
 
+### Pastas:
+
+- Poligono : Aplicação de Java + Maven
+
+- Poligono 2 : Aplicação de testes no projeto "Poligono"
+
+- Poligono - professor : Desenvolvido pelo professor em aula
