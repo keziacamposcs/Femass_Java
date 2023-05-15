@@ -1,6 +1,6 @@
 public class Dependente {
     private Long cartao_dep;
-    private Long nom_dep;
+    private String nom_dep;
     private String parentesco;
     private String email_dep;
 
@@ -12,11 +12,11 @@ public class Dependente {
         this.cartao_dep = cartao_dep;
     }
 
-    public Long getNom_dep() {
+    public String getNom_dep() {
         return nom_dep;
     }
 
-    public void setNom_dep(Long nom_dep) {
+    public void setNom_dep(String nom_dep) {
         this.nom_dep = nom_dep;
     }
 
@@ -36,7 +36,7 @@ public class Dependente {
         this.email_dep = email_dep;
     }
 
-    public Dependente(Long cartao_dep, Long nom_dep, String parentesco, String email_dep)
+    public Dependente(Long cartao_dep, String nom_dep, String parentesco, String email_dep)
     {
         this.cartao_dep = cartao_dep;
         this.nom_dep = nom_dep;
